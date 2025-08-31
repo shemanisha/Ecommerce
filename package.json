@@ -13,13 +13,14 @@
   },
   "keywords": [],
   "author": "",
-  "type": "module"                                                                                                                         ,
+  "type": "module",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/shemanisha/Ecommerce/issues"
   },
   "homepage": "https://github.com/shemanisha/Ecommerce#readme",
   "dependencies": {
+    "@upstash/redis": "^1.35.3",
     "bcryptjs": "^3.0.2",
     "cloudinary": "^2.7.0",
     "cookie-parser": "^1.4.7",
