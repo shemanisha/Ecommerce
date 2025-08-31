@@ -46,7 +46,7 @@ export const login = async (req, res) => {
             await storeRefreshToken(user._id, refresh_token);
             // Set HttpOnly cookie
             setCookies(res, access_token, refresh_token);
-            return res.status(200).json({ _id: user._id, name: user.name, email: user.email });
+            return res.status(200).json({ _id: user._id, name: user.name, email: user.email, role: user.role });
         }
         else {
             return res.status(400).json({ message: 'Invalid credentials' });
